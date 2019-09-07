@@ -15,3 +15,7 @@ DB = ActiveRecord::Base.establish_connection({
 if ENV["ACTIVE_RECORD_ENV"] == "test"
   ActiveRecord::Migration.verbose = false
 end
+
+
+aa = Show.create(name: "Most", rating: 5)
+bb = Show.create(name: "Least", rating: 1)
